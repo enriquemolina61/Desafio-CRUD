@@ -9,11 +9,20 @@ class BikeController {
       : res.status(204).send();
   }
 
-  async findOne(req: Request, res: Response) {}
+  async findColor(req: Request, res: Response) {
+    const { bikeColor } = req.params;
+    const bike = await BikeModel.findAll({
+      where: {
+        color: bikeColor,
+      },
+    });
+    return bike ? res.status(200).json(bike) : res.status(204).send;
+  }
+
   async create(req: Request, res: Response) {
-    const { cor, marchas, marca, modelo, preco } = req.body;
+    const { color, marchas, marca, modelo, preco } = req.body;
     const bike = await BikeModel.create({
-      cor,
+      color,
       marchas,
       marca,
       modelo,
@@ -23,6 +32,7 @@ class BikeController {
   }
 
   async update(req: Request, res: Response) {}
+
   async destroy(req: Request, res: Response) {}
 }
 

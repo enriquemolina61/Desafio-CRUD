@@ -8,7 +8,7 @@ export const BikeModel = db.define("bike", {
     allowNull: false,
     primaryKey: true,
   },
-  cor: {
+  color: {
     type: DataTypes.STRING,
     allowNull: false,
   },
