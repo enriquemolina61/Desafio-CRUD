@@ -11,7 +11,7 @@ class BicycleController {
       : res.status(204).send();
   }
 
-  async findColor(req: Request, res: Response) {
+  async findByColor(req: Request, res: Response) {
     const { bicycleColor } = req.params;
     const bicycle = await bicycleModel.findAll({
       where: {
@@ -55,7 +55,7 @@ class BicycleController {
     });
   }
 
-  async findPrice(req: Request, res: Response) {
+  async findByPrice(req: Request, res: Response) {
     const { bicyclePrice } = req.params;
     const bicycle = await bicycleModel.findAll({
       where: {
