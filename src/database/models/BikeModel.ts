@@ -1,4 +1,4 @@
-import { DataTypes } from "sequelize/types";
+import { DataTypes } from "sequelize";
 import { db } from "../db";
 
 export const BikeModel = db.define("bike", {
@@ -25,7 +25,7 @@ export const BikeModel = db.define("bike", {
     allowNull: false,
   },
   preco: {
-    type: DataTypes.NUMBER,
+    type: DataTypes.FLOAT,
     allowNull: false,
   },
 });

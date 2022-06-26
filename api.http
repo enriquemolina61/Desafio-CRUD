@@ -1,0 +1,11 @@
+### Create Bike
+POST http://localhost:3000/bike
+Content-Type: application/json
+
+{
+  "cor":"azul",
+  "marchas": 6,
+  "marca": "Caloi",
+  "modelo":"Estrada",
+  "preco": 50.99
+}

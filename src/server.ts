@@ -1,7 +1,13 @@
-import express from "express";
+import express, { json } from "express";
+import { db } from "./database/db";
+import { router } from "./database/routes/routes";
 
 const app = express();
 
-app.listen(3000, () => {
-  console.log(`${process.env.PROJECT_NAME} is running!`);
+app.use(json());
+app.use(router);
+
+app.listen(3000, async () => {
+  await db.sync();
+  console.log(`${process.env.DATABASE_NAME} is running!`);
 });
