@@ -1,20 +1,20 @@
-### Create Bike
-POST http://localhost:3000/bike
+### Create bicycle
+POST http://localhost:3000/bicycle
 Content-Type: application/json
 
 {
-  "color":"azul",
-  "marchas": 18,
-  "marca": "BMW",
+  "color":"amarela",
+  "gears": 18,
+  "brand": "BMW",
   "modelo":"Estrada",
-  "preco": 15000
+  "price": 15000
 }
 
 
-### Find All Bikes
-GET http://localhost:3000/bike
+### Find All bicycle
+GET http://localhost:3000/bicycle
 
 
 ### Find By Color
 
-GET http://localhost:3000/bike/amarela
+GET http://localhost:3000/bicycle/amarela

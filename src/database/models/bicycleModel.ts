@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import { db } from "../db";
 
-export const BikeModel = db.define("bike", {
+export const bicycleModel = db.define("bicycle", {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
@@ -12,11 +12,11 @@ export const BikeModel = db.define("bike", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  marchas: {
+  gears: {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
-  marca: {
+  brand: {
     type: DataTypes.STRING,
     allowNull: false,
   },
@@ -24,7 +24,7 @@ export const BikeModel = db.define("bike", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  preco: {
+  price: {
     type: DataTypes.FLOAT,
     allowNull: false,
   },

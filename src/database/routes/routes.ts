@@ -1,12 +1,12 @@
 import express from "express";
-import bikeControllers from "../../controllers/bikeControllers";
+import bicycleControllers from "../../controllers/bicycleControllers";
 
 const router = express.Router();
 
-router.post("/bike", bikeControllers.create);
-router.get("/bike", bikeControllers.findAll);
-router.get("/bike/:bikeColor", bikeControllers.findColor);
-router.put("/bike/:bikeId", bikeControllers.update);
-router.delete("/bike/:bikeId", bikeControllers.destroy);
+router.post("/bicycle", bicycleControllers.create);
+router.get("/bicycle", bicycleControllers.findAll);
+router.get("/bicycle/:bicycleColor", bicycleControllers.findColor);
+router.put("/bicycle/:bicycleId", bicycleControllers.update);
+router.delete("/bicycle/:bicycleId", bicycleControllers.destroy);
 
 export { router };
