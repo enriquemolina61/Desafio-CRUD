@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { bicycleModel } from "../database/models/bicycleModel";
+const { Op } = require("sequelize");
 
 class BicycleController {
   async findAll(req: Request, res: Response) {
@@ -31,9 +32,40 @@ class BicycleController {
     return res.status(201).json(bicycle);
   }
 
-  async update(req: Request, res: Response) {}
+  async update(req: Request, res: Response) {
+    const { bicycleId } = req.params;
+    await bicycleModel.update(
+      { price: req.body.price },
+      {
+        where: {
+          id: bicycleId,
+        },
+      }
+    );
+    return res.status(204).send;
+  }
 
-  async destroy(req: Request, res: Response) {}
+  async sell(req: Request, res: Response) {
+    const { bicycleId } = req.params;
+    await bicycleModel.destroy({
+      where: {
+        id: bicycleId,
+      },
+    });
+  }
+
+  async findPrice(req: Request, res: Response) {
+    const { bicyclePrice } = req.params;
+    const bicycle = await bicycleModel.findAll({
+      where: {
+        price: {
+          [Op.lte]: bicyclePrice,
+        },
+      },
+    });
+
+    return bicycle ? res.status(200).json(bicycle) : res.status(204).send;
+  }
 }
 
 export default new BicycleController();

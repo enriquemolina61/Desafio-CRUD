@@ -3,11 +3,11 @@ POST http://localhost:3000/bicycle
 Content-Type: application/json
 
 {
-  "color":"amarela",
-  "gears": 18,
+  "color":"rOSA",
+  "gears": 12,
   "brand": "BMW",
-  "modelo":"Estrada",
-  "price": 15000
+  "modelo":"oFF-rOAD",
+  "price": 1000
 }
 
 
@@ -18,3 +18,22 @@ GET http://localhost:3000/bicycle
 ### Find By Color
 
 GET http://localhost:3000/bicycle/amarela
+
+### Uptade Preço
+
+PUT  http://localhost:3000/bicycle/4
+Content-Type: application/json
+
+{ 
+  "price": 31000
+}
+
+
+### Find By Price
+
+GET http://localhost:3000/bicycle/price/31000
+
+
+### Sell
+
+DELETE http://localhost:3000/bicycle/venda/5
