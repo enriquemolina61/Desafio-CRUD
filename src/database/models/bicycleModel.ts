@@ -20,7 +20,7 @@ export const bicycleModel = db.define("bicycle", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  modelo: {
+  model: {
     type: DataTypes.STRING,
     allowNull: false,
   },

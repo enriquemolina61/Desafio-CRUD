@@ -6,7 +6,7 @@ Content-Type: application/json
   "color":"Verde",
   "gears": 8,
   "brand": "Caloi",
-  "modelo":"Tracker",
+  "model":"Tracker",
   "price": 2500
 }
 

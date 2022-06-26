@@ -22,12 +22,12 @@ class BicycleController {
   }
 
   async create(req: Request, res: Response) {
-    const { color, gears, brand, modelo, price } = req.body;
+    const { color, gears, brand, model, price } = req.body;
     const bicycle = await bicycleModel.create({
       color,
       gears,
       brand,
-      modelo,
+      model,
       price,
     });
     return res.status(201).json(bicycle);
