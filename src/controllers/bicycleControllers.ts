@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { bicycleModel } from "../database/models/bicycleModel";
+
 const { Op } = require("sequelize");
 
 class BicycleController {
