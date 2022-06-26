@@ -3,11 +3,11 @@ POST http://localhost:3000/bicycle
 Content-Type: application/json
 
 {
-  "color":"Verde",
-  "gears": 8,
-  "brand": "Caloi",
-  "model":"Tracker",
-  "price": 2500
+  "color":"Azul",
+  "gears": 10,
+  "brand": "Sundown",
+  "model":"Road",
+  "price": 25000
 }
 
 ### Find All bicycle
