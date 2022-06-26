@@ -18,7 +18,7 @@ class BicycleController {
         color: bicycleColor,
       },
     });
-    return bicycle ? res.status(200).json(bicycle) : res.status(204).send;
+    return bicycle ? res.status(200).json(bicycle) : res.status(204).send();
   }
 
   async create(req: Request, res: Response) {
@@ -65,7 +65,7 @@ class BicycleController {
       },
     });
 
-    return bicycle ? res.status(200).json(bicycle) : res.status(204).send;
+    return bicycle ? res.status(200).json(bicycle) : res.status(204).send();
   }
 }
 
