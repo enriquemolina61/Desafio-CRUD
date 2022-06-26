@@ -3,11 +3,11 @@ POST http://localhost:3000/bicycle
 Content-Type: application/json
 
 {
-  "color":"rOSA",
-  "gears": 12,
-  "brand": "BMW",
-  "modelo":"oFF-rOAD",
-  "price": 1000
+  "color":"Verde",
+  "gears": 8,
+  "brand": "Caloi",
+  "modelo":"Tracker",
+  "price": 2500
 }
 
 ### Find All bicycle
@@ -29,9 +29,9 @@ Content-Type: application/json
 
 ### Find By Price
 
-GET http://localhost:3000/bicycle/price/31000
+GET http://localhost:3000/bicycle/price/3000
 
 
 ### Sell
 
-DELETE http://localhost:3000/bicycle/venda/5
+DELETE http://localhost:3000/bicycle/sell/4
