@@ -3,9 +3,13 @@ POST http://localhost:3000/bike
 Content-Type: application/json
 
 {
-  "cor":"azul",
-  "marchas": 6,
-  "marca": "Caloi",
-  "modelo":"Estrada",
-  "preco": 50.99
+  "cor":"amarela",
+  "marchas": 18,
+  "marca": "Sundown",
+  "modelo":"Lazer",
+  "preco": 600
 }
+
+
+### Find All Bikes
+GET http://localhost:3000/bike
