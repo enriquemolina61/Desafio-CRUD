@@ -24,8 +24,8 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 # Clone este repositório
 $ git clone https://github.com/enriquemolina61/Desafio-CRUD
 
-Antes de instalar as dependências, alterar o .env.sample para apenas .env
- e colocar as credenciais do seu banco de dados.
+Alterar o .env.sample para apenas .env e colocar as credenciais do seu banco de dados postgres.
+
 # Instale as dependências
 $ npm install
 
