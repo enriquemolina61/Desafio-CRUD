@@ -3,7 +3,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert(
-      "bicycles",
+      "Bicycle",
       [
         {
           color: "Green",
@@ -11,8 +11,8 @@ module.exports = {
           brand: "Caloi",
           model: "Tracker",
           price: 2500,
-          created_at: null,
-          updated_at: null,
+          updated_at: new Date(),
+          created_at: new Date(),
         },
         {
           color: "Blue",
@@ -20,8 +20,8 @@ module.exports = {
           brand: "Sundown",
           model: "Speed",
           price: 5000,
-          created_at: null,
-          updated_at: null,
+          updated_at: new Date(),
+          created_at: new Date(),
         },
         {
           color: "Red",
@@ -29,8 +29,8 @@ module.exports = {
           brand: "GTS",
           model: "Mountian-Bike",
           price: 22000,
-          created_at: null,
-          updated_at: null,
+          updated_at: new Date(),
+          created_at: new Date(),
         },
         {
           color: "Green",
@@ -38,8 +38,8 @@ module.exports = {
           brand: "Caloi",
           model: "Speed",
           price: 1500,
-          created_at: null,
-          updated_at: null,
+          updated_at: new Date(),
+          created_at: new Date(),
         },
         {
           color: "Yellow",
@@ -47,8 +47,8 @@ module.exports = {
           brand: "Monark",
           model: "Urban",
           price: 2500,
-          created_at: null,
-          updated_at: null,
+          updated_at: new Date(),
+          created_at: new Date(),
         },
       ],
       {}

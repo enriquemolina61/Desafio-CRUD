@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 import { db } from "../db";
 
 export const bicycleModel = db.define(
-  "bicycles",
+  "Bicycle",
   {
     id: {
       type: DataTypes.INTEGER,
@@ -29,15 +29,6 @@ export const bicycleModel = db.define(
     price: {
       type: DataTypes.FLOAT,
       allowNull: false,
-    },
-    created_at: {
-      type: DataTypes.DATE,
-      field: "created_at",
-    },
-
-    updated_at: {
-      type: DataTypes.DATE,
-      field: "updated_at",
     },
   },
   {
