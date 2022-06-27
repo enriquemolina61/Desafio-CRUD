@@ -30,12 +30,12 @@ export const bicycleModel = db.define(
       type: DataTypes.FLOAT,
       allowNull: false,
     },
-    createdAt: {
+    created_at: {
       type: DataTypes.DATE,
       field: "created_at",
     },
 
-    updatedAt: {
+    updated_at: {
       type: DataTypes.DATE,
       field: "updated_at",
     },
