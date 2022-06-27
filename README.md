@@ -36,3 +36,8 @@ $ npm run dev
 
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
+
+### Testando as rotas
+
+Para testar as rotas de POST, GET, PUT e DELETE, utilize o arquivo api.http. Onde em cada rota tem o botão "Send Request" para acionar a rota.
+
