@@ -1,5 +1,5 @@
 {
-  "name": "desafio-hubees",
+  "name": "desafio-crud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enriquemolina61/Desafio-Hubees.git"
+    "url": "git+https://github.com/enriquemolina61/Desafio-CRUD.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/enriquemolina61/Desafio-Hubees/issues"
+    "url": "https://github.com/enriquemolina61/Desafio-CRUD/issues"
   },
-  "homepage": "https://github.com/enriquemolina61/Desafio-Hubees#readme",
+  "homepage": "https://github.com/enriquemolina61/Desafio-CRUD#readme",
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
