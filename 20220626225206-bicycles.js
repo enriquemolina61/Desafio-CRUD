@@ -2,7 +2,7 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("bicycle", {
+    await queryInterface.createTable("bicycles", {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -29,10 +29,19 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
+      createdAt: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+
+      updatedAt: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
     });
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("bicycle");
+    await queryInterface.dropTable("bicycles");
   },
 };
