@@ -16,7 +16,7 @@ GET http://localhost:3000/bicycle
 
 ### Find By Color
 
-GET http://localhost:3000/bicycle/amarela
+GET http://localhost:3000/bicycle/Blue
 
 ### Uptade Preço
 
@@ -34,4 +34,4 @@ GET http://localhost:3000/bicycle/price/3000
 
 ### Sell
 
-DELETE http://localhost:3000/bicycle/sell/4
+DELETE http://localhost:3000/bicycle/sell/9

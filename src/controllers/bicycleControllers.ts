@@ -53,6 +53,7 @@ class BicycleController {
         id: bicycleId,
       },
     });
+    return res.json({ message: "Bicicleta Vendida!" });
   }
 
   async findByPrice(req: Request, res: Response) {
