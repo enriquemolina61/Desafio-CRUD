@@ -56,7 +56,7 @@ class BicycleController {
           },
         }
       );
-      return res.status(204).send;
+      return res.status(203).json(bicycleModel);
     } catch (error) {
       return res.send({ error });
     }

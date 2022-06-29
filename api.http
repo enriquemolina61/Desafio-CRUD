@@ -20,11 +20,11 @@ GET http://localhost:3000/bicycle/Blue
 
 ### Uptade Preço
 
-PUT  http://localhost:3000/bicycle/4
+PUT  http://localhost:3000/bicycle/5
 Content-Type: application/json
 
 { 
-  "price": 31000
+  "price": 3000
 }
 
 ### Find By Price
